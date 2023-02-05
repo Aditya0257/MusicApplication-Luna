@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "16270499581",
+    "project_id": "music-app-0257",
+    "storage_bucket": "music-app-0257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16270499581:android:2a2048f1b0aba12bcda894",
+        "android_client_info": {
+          "package_name": "com.example.luna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16270499581-b4fdaef07tuhmllv7f028necla321rqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEzNodSNP1RTAc5aXo9Qu-pJZxSothQz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16270499581-b4fdaef07tuhmllv7f028necla321rqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
