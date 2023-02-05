@@ -11,7 +11,7 @@ import '../view/first_tab.dart';
 
 class HomePageController extends GetxController {
   final _tabIndex = 0.obs;
-  bool checkPlayMusic = true;
+  bool checkPlayMusic = false;
   int get tabIndex => _tabIndex.value;
   List<Widget> tab = [const FirstTab(), SearchPage(), Profile()];
   onChangeTab(int x) {
@@ -24,13 +24,12 @@ class HomePageController extends GetxController {
     await artists();
     await albums();
     await recommendation();
-    await musicPlayerInitialization();
+    // await musicPlayerInitialization();
   }
 
   final assetsAudioPlayer = AssetsAudioPlayer();
 
   musicPlayerInitialization() {
-    
     assetsAudioPlayer.open(
       Audio("assets/audios/song1.mp3"),
     );
@@ -40,6 +39,7 @@ class HomePageController extends GetxController {
     checkPlayMusic = !checkPlayMusic;
     if (checkPlayMusic == true) {
       await assetsAudioPlayer.play();
+      await musicPlayerInitialization();
     }
     if (checkPlayMusic == false) {
       await assetsAudioPlayer.pause();
